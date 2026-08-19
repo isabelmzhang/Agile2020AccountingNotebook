@@ -1,12 +1,12 @@
-import chai = require('chai');
-import chaiHttp = require('chai-http');
-import 'mocha';
+import chai from 'chai'
+import chaiHttp from 'chai-http'
+import 'mocha'
 
-chai.use(chaiHttp);
-const expect = chai.expect;
+chai.use(chaiHttp)
+const expect = chai.expect
 
-import { createAppServer } from '../../src/server/appServer';
-import { Account } from '../../src/models/Account';
+import { createAppServer } from '../../src/server/appServer'
+import { Account } from '../../src/models/Account'
 
 const account = new Account()
 const appServer = createAppServer(account);

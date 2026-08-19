@@ -1,9 +1,9 @@
-import chai = require('chai');
-import 'mocha';
+import chai from 'chai'
+import 'mocha'
 
-import { Transaction, TransactionType } from '../../src/models/Transaction';
+import { Transaction, TransactionType } from '../../src/models/Transaction'
 
-const expect = chai.expect;
+const expect = chai.expect
 
 describe('Credit transaction model', () => {
   const creditTransaction = new Transaction(TransactionType.CREDIT, 60);
